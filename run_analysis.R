@@ -52,7 +52,7 @@ uniqueData = rbind(trainingData, testData)
 # get all column names 
 allColNames <- colnames(uniqueData)
 
-# assign logical value TRUE to column containing measurements of interest:
+# assign logical value TRUE to column containing variables of interest:
 # subjectId, activityId, mean and std measurements 
 colToExtract <- grepl("subject", allColNames) | grepl("activityId", allColNames) | 
                 grepl("mean()", allColNames, fixed=TRUE) | grepl("std()", allColNames)

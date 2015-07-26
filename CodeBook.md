@@ -25,7 +25,7 @@ A full list of the variables taken for each record it is provided in the "Variab
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.  
 - Triaxial Angular velocity from the gyroscope.   
 - A 561-feature vector with time and frequency domain variables.   
-- Its activity label.   
+- Activity labels.   
 - An identifier of the subject who carried out the experiment.  
 
 ### Notes on the raw data
@@ -34,16 +34,16 @@ A full list of the variables taken for each record it is provided in the "Variab
 
 ### Tidy Data
 
-The R script, run_analysis.R, does the following: 
+In order to tidy the data, the R script, "run_analysis.R", does the following: 
 
 1. Downloads the dataset if it does not already exist in the working directory  
-2. Loads the activity and feature info  
+2. Loads the activity labels and feature info files 
 3. Loads both the training and test datasets
 4. Creates a unique dataset by binding the training and test sets
 5. Keeps only those columns which reflect a mean or standard deviation  
 6. Uses descriptive activity names to name the activities in the data set  
-7. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair.  
-8. The end result is shown in the output file tidy.txt.
+7. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and each activity.  
+8. Put The end result in the output file "tidyData.txt".
 
 ### References
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
