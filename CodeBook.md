@@ -29,6 +29,7 @@ A full list of the variables taken for each record it is provided in the "Variab
 - An identifier of the subject who carried out the experiment.  
 
 ### Notes on the raw data
+
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
@@ -44,6 +45,3 @@ In order to tidy the data, the R script, "run_analysis.R", does the following:
 6. Uses descriptive activity names to name the activities in the data set  
 7. Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and each activity.  
 8. Put The end result in the output file "tidyData.txt".
-
-### References
-Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
